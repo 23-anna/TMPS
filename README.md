@@ -2,6 +2,7 @@
 TMPS Project Repo
 
 **Project Topic:** Architectural Firm - Creational Design Patterns
+
 **Project author:** Ana Petranis
 
 **Objectives:**
@@ -27,7 +28,7 @@ Factory Method Design Pattern is one of the most used design patterns in Java. I
 --Builder--
 The Builder Design Pattern is another creational pattern designed to deal with the construction of comparatively complex objects. When the complexity of creating object increases, the Builder pattern can separate out the instantiation process by using another object to construct the object. It is the base pattern of the project. In this CDP are involved Classes Deal, BusinessCenter, BusinessCenterBuilder, School, SchoolBuilder, House, HouseBuilder and the interface IBuilder.
 
-**Results**
+**Results:**
 
 The result of the program execution is attached in the Lab1.png file. Here you can see the demo of the operations that executes the algorithm. 
 In conclusion, it is possible to say that Design Patterns ease the process of software development and help developers to maintain the code clean and clear.
