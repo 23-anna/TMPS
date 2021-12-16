@@ -26,6 +26,7 @@ Behavioral design pattern "Chain of Responsibility" helped in the realization of
 - HandleClient checks, if the current client is presented in ClientDB list. If yes, sends the request to HandleDiscount; if no, gives a discount for new clients
 
   @Override
+  
       public void handle(Request request){
       
           clients.setClients();
