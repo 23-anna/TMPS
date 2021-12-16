@@ -27,30 +27,51 @@ Behavioral design pattern "Chain of Responsibility" helped in the realization of
 
   @Override
       public void handle(Request request){
+      
           clients.setClients();
+          
           if (clients.getClients().contains(request.client)){
+          
               BasicHandler h2 = new HandleDiscount();
+              
               h2.handle(request);
+              
           } else {
+          
               request.discount = 2;
+              
               System.out.println("For our new clients we have a Christmas sale -2%");
+              
           }
+          
       }
       
 - HandleDiscount checks the type of building the client wants to order
 
   @Override
+  
       public void handle(Request request){
+      
           if (request.building.equals("School")){
+          
               request.discount = 5;
+              
               System.out.println("For our old clients who want to build a school we have a Christmas sale -5%");
+              
           } else if (request.building.equals("Business Center")){
+          
               request.discount = 3;
+              
               System.out.println("For our old clients who want to build a business center we have a Christmas sale -3%");
+              
           } else if (request.building.equals("Private House")){
+          
               request.discount = 10;
+              
               System.out.println("For our old clients who want to build a private house we have a Christmas sale -10%");
+              
           }
+          
       }
 
 Results:
